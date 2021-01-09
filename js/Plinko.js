@@ -1,7 +1,8 @@
 class Plinko{
     constructor(x,y){
       var options = {
-         isStatic: true
+         isStatic: true,
+         setMass:2
       }
       this.body = Bodies.circle(x,y,10,options);
       this.radius = this.body.circleRadius;
